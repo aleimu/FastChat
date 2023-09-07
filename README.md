@@ -204,6 +204,11 @@ python3 -m fastchat.serve.test_message --model-name vicuna-7b-v1.3
 ```
 You will see a short output.
 
+### Launch the Sentence Model Worker
+```bash
+python3 -m fastchat.serve.sentence_model_worker --host 0.0.0.0 --model-name m3e-large --model-path /home/admin/data/models/m3e-large/
+```
+
 #### Launch the Gradio web server
 ```bash
 python3 -m fastchat.serve.gradio_web_server
